@@ -102,9 +102,9 @@
 
             // 2. 收集表单数据
             const formData = {
-                selected_dishes: selectedDishes.join('、'), // 用顿号分隔勾选的菜品
+                submit_time: new Date().toLocaleString(), // 提交时间
                 remark: document.getElementById('remark').value,
-                submit_time: new Date().toLocaleString() // 提交时间
+                selected_dishes: selectedDishes.join('、') // 用顿号分隔勾选的菜品
             };
 
             // 3. 验证（至少勾选1个菜品）
